@@ -9,7 +9,7 @@ makeCacheMatrix <- function(x = matrix()) {
   cachedInverse <- NULL
   
   set <- function(value) {
-    x <- value
+    x <<- value
     cachedInverse <<- NULL
   }
   
